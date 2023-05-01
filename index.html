@@ -5,23 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="resetsheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/3a2c890ad7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-        <p>Encriptador &copy - </p>
-        <p>
-            <a href="https://github.com/davm07">Github</a>
-        </p>
-        <p>
-            <a href="https://www.linkedin.com/in/diego-vasquez-mejia/">LinkedIn</a>
-        </p>
-    </footer>
+    <div class="content-home">
+        <header>
+            <img src="images/lock-icon.png" alt="Lock-Icon" id="lock-icon">
+            <h1 id="title1">Encriptador Challenge One</h1>
+        </header>
+        <main id="containers">
+            <div id="container1">
+                <label for="encriptar-texto"></label>
+                <textarea id="encriptar-texto" placeholder="Ingrese el texto aqui" class="txt-encriptados"></textarea>
+                <div id="msg-alerta">
+                    <img src="images/exclamacion.png" alt="Alerta" id="alerta-icon">
+                    <p id="alerta">Solo letras minusculas y sin acentos</p>
+                </div>
+                <div id="botones">
+                    <button id="btn-encriptar" class="btn-x">Encriptar</button>
+                    <button id="btn-desencriptar" class="btn-x">Desencriptar</button>
+                </div>
+            </div>
+            <div id="container2">
+                <label for="txt-desencriptado"><textarea id="txt-desencriptado" placeholder="Texto desencriptado" class="txt-encriptados"></textarea></label>
+            </div>
+        </main>
+        <footer>
+            <p>&copyEncriptador - Diego Vasquez</p>
+            <p>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/davm07" class="links">Github</a>
+            </p>
+            <p> 
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/diego-vasquez-mejia/" class="links">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>

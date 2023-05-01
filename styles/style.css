@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content-home {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+#lock-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#title1 {
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 3px;
+    font-size: 30px;
+    padding: 0 15px 0 15px;
+}
+
+#containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+
+#container1 {
+    grid-column: 1/2;
+    margin: 10px auto;
+}
+
+#msg-alerta {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+#alerta-icon {
+    width: 15px;
+    height: 15px;
+    padding: 0 5px 0 5px;
+}
+
+#alerta {
+    font-size: 15px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn-x {
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+}
+
+#container2 {
+    grid-column: 2/3;
+    margin: 10px auto;
+}
+
+.txt-encriptados {
+    width: 650px;
+    height: 400px;
+    resize: none;
+}
+
+footer {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.1em;
+}
+
+.links {
+    text-decoration: none;
+}
+
+
+
+
