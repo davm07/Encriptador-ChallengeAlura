@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #EEEEEE;
 }
 
 .content-home {
@@ -23,6 +24,7 @@ header {
 }
 
 #title1 {
+    color: #213555;
     font-family: "Bebas Neue", cursive;
     letter-spacing: 3px;
     font-size: 30px;
@@ -36,12 +38,26 @@ header {
     margin: 10px 20px 10px 20px;
 }
 
-#encriptar-texto, #txt-desencriptado {
+#encriptar-texto {
+    color: #213555;
     box-sizing: border-box;
     padding: 10px;
-    border-radius: 5px;
-    border: 2px black solid;
-    font-size: 1.1em;
+    border: none;
+    background-color: #EEEEEE;
+    font-size: 1.2em;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#encriptar-texto:focus {
+    outline: none;
+}
+
+#txt-desencriptado {
+    color: #213555;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    font-size: 1.2em;
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -65,6 +81,7 @@ header {
 #alerta {
     font-size: 15px;
     font-family: "Roboto Condensed", sans-serif;
+    color: #213555;
 }
 
 #botones {
@@ -73,11 +90,33 @@ header {
     justify-content: space-around;
 }
 
-.btn-x {
+.btn-x, #btn-copiar {
+    color: #213555;
     font-size: 20px;
     font-family: "Bebas Neue", cursive;
     padding: 5px 20px 5px 20px;
     border-radius: 5px;
+    border: 2px #213555 solid;
+}
+
+#btn-encriptar {
+    background-color: #213555;
+    color: #EEEEEE;
+    transition: 0.4s;
+}
+
+#btn-encriptar:hover {
+    background-color: #EEEEEE;
+    color: #213555;
+}
+
+#btn-desencriptar, #btn-copiar {
+    transition: 0.4s;
+}
+
+#btn-desencriptar:hover, #btn-copiar:hover {
+    background-color: #213555;
+    color: #EEEEEE;
 }
 
 #container2 {
@@ -91,15 +130,22 @@ header {
     resize: none;
 }
 
+#copiar {
+    text-align: center;
+    margin-top: 55px;
+}
+
 footer {
     display: block;
     margin: 0 auto;
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.1em;
+    color: #213555;
 }
 
 .links {
+    color: #213555;
     text-decoration: none;
 }
 

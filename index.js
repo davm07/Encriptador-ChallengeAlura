@@ -2,6 +2,7 @@ let txtEncr = document.querySelector("#encriptar-texto");
 let txtDescr = document.querySelector("#txt-desencriptado");
 const btnEncr = document.querySelector("#btn-encriptar");
 const btnDescr = document.querySelector("#btn-desencriptar");
+const btnCopiar = document.querySelector("#btn-copiar");
 
 
 function validarTexto() {
@@ -19,6 +20,7 @@ function btnEncriptar() {
     if (!validarTexto()) {
         const textoEncr = encriptarTexto(txtEncr.value);
         txtDescr.value = textoEncr;
+        txtEncr.value = "";
     }
 }
 
@@ -70,8 +72,17 @@ function btnDesencriptar() {
     if (!validarTexto()) {
         const textoDecr = desencriptarTexto(txtEncr.value);
         txtDescr.value = textoDecr;
+        txtEncr.value = "";
     }
+}
+
+function copiarTexto() {
+    txtDescr.select();
+    navigator.clipboard.writeText(txtDescr.value);
+    txtDescr.value = "";
+    alert("Texto copiado");
 }
 
 btnEncr.addEventListener("click", btnEncriptar);
 btnDescr.addEventListener("click", btnDesencriptar);
+btnCopiar.addEventListener("click", copiarTexto);

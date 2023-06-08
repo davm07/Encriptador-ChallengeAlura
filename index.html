@@ -16,7 +16,7 @@
             <h1 id="title1">Encriptador Challenge One</h1>
         </header>
         <main id="containers">
-            <div id="container1">
+            <section id="container1">
                 <label for="encriptar-texto"></label>
                 <textarea id="encriptar-texto" placeholder="Ingrese el texto aqui" class="txt-encriptados"></textarea>
                 <div id="msg-alerta">
@@ -27,10 +27,13 @@
                     <button id="btn-encriptar" class="btn-x">Encriptar</button>
                     <button id="btn-desencriptar" class="btn-x">Desencriptar</button>
                 </div>
-            </div>
-            <div id="container2">
-                <label for="txt-desencriptado"><textarea id="txt-desencriptado" placeholder="Texto desencriptado" class="txt-encriptados"></textarea></label>
-            </div>
+            </section>
+            <section id="container2">
+                <label for="txt-desencriptado"><textarea id="txt-desencriptado" placeholder="Texto desencriptado" class="txt-encriptados" disabled></textarea></label>
+                <div id="copiar">
+                    <button id="btn-copiar">copiar</button>
+                </div>
+            </section>
         </main>
         <footer>
             <p>&copyEncriptador - Diego Vasquez</p>
