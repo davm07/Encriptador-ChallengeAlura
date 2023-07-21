@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #EEEEEE;
+    background-color: #e4e4e4;
 }
 
 .content-home {
@@ -42,6 +42,7 @@ header {
     color: #213555;
     box-sizing: border-box;
     padding: 10px;
+    border-radius: 10px;
     border: none;
     background-color: #EEEEEE;
     font-size: 1.2em;
@@ -56,7 +57,9 @@ header {
     color: #213555;
     box-sizing: border-box;
     padding: 10px;
+    background-color: #EEEEEE;
     border: none;
+    border-radius: 10px;
     font-size: 1.2em;
     font-family: "Roboto Condensed", sans-serif;
 }
@@ -149,6 +152,51 @@ footer {
     text-decoration: none;
 }
 
+@media screen and (max-width:1024px){
+    header {
+        margin: 0px 0px 1rem 0;
+        justify-content: center;
+    }
+
+    #containers {
+        display: block;
+    }
+
+    .txt-encriptados {
+        width: 85%;
+        height: 350px;
+    }
+
+    #container1, #container2{
+        margin: 1.5rem 0;
+    }
+
+    #encriptar-texto, #txt-desencriptado{
+        display: block;
+        margin: auto;
+    }
+
+    #msg-alerta {
+        justify-content: center;
+    }
+
+    #botones {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #title1 {
+        font-size: 1.2em;
+    }
+
+    #lock-icon {
+        display: none;
+        width: 15%;
+        height: 15%;
+    }
+}
 
 
 

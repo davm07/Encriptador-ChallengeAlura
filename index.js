@@ -9,7 +9,7 @@ function validarTexto() {
     let textoEscrito = document.querySelector("#encriptar-texto").value;
     let validador = textoEscrito.match(/^[a-z\s]*$/);
 
-    if (!validador || validador.length === 0) {
+    if (!validador || textoEscrito.length === 0) {
         alert("Solo son permitidas letras minúsculas y sin acentos");
         location.reload();
         return true;
@@ -18,7 +18,7 @@ function validarTexto() {
 
 function btnEncriptar() {
     if (!validarTexto()) {
-        const textoEncr = encriptarTexto(txtEncr.value);
+        let textoEncr = encriptarTexto(txtEncr.value);
         txtDescr.value = textoEncr;
         txtEncr.value = "";
     }
@@ -69,8 +69,14 @@ function desencriptarTexto(txtDescriptar) {
 }
 
 function btnDesencriptar() {
-    if (!validarTexto()) {
-        const textoDecr = desencriptarTexto(txtEncr.value);
+    let textoDecr;
+    if (txtEncr.value.length == 0 && txtDescr.value.length > 0) {
+        textoDecr = desencriptarTexto(txtDescr.value);
+        txtEncr.value = textoDecr;
+        txtDescr.value = "";
+    }
+    else if (!validarTexto()) {
+        textoDecr = desencriptarTexto(txtEncr.value);
         txtDescr.value = textoDecr;
         txtEncr.value = "";
     }
