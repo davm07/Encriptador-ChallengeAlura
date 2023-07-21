@@ -188,13 +188,11 @@ footer {
 
 @media screen and (max-width: 640px) {
     #title1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     #lock-icon {
         display: none;
-        width: 15%;
-        height: 15%;
     }
 }
 
