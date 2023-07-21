@@ -86,9 +86,8 @@ function copiarTexto() {
     txtDescr.select();
     navigator.clipboard.writeText(txtDescr.value);
     txtDescr.value = "";
-    alert("Texto copiado");
 }
 
 btnEncr.addEventListener("click", btnEncriptar);
 btnDescr.addEventListener("click", btnDesencriptar);
-btnCopiar.addEventListener("click", copiarTexto);
+btnCopiar.onclick = copiarTexto;
