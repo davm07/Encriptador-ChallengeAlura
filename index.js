@@ -83,8 +83,8 @@ function btnDesencriptar() {
 }
 
 function copiarTexto() {
-    navigator.clipboard.writeText(txtDescr.value);
-    alert("Texto copiado");
+    let texto = txtDescr.value;
+    navigator.clipboard.writeText(texto);
     txtDescr.value = "";
 }
 
