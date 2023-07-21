@@ -83,11 +83,11 @@ function btnDesencriptar() {
 }
 
 function copiarTexto() {
-    let texto = txtDescr.value.select();
-    navigator.clipboard.writeText(texto);
+    navigator.clipboard.writeText(txtDescr.value);
+    alert("Texto copiado");
     txtDescr.value = "";
 }
 
 btnEncr.addEventListener("click", btnEncriptar);
 btnDescr.addEventListener("click", btnDesencriptar);
-btnCopiar.onclick = copiarTexto;
+btnCopiar.addEventListener("click", copiarTexto);
